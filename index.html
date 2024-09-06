@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Pagina Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manuales y tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Organigrama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="chat-soporte">
+        <!-- seccion buscador mas perfiles -->
+    <button type="button" id="btn__hide " onclick="hideShow()" class="hide__button">Mensajes</button>
+        <section class="chat-soporte__contactos colapse" id="mensajes">
+            <h1>buscador</h1>
+            <div class="chat-soporte__contactos__buscador container text-center">
+                <input type="text" class="chat-soporte__contactos__input" placeholder="Buscar conversaciones..."><button class="chat-soporte__contactos__btn">Buscar</button>     
+            </div>
+            <section class="chat-soporte__contactos__menu">
+                <ul class="chat-soporte__contactos__perfil">
+                    <li class="chat-soporte__contactos__perfiles">
+                        <div class="chat-soporte__contactos__perfiles-1__img">
+                            <img src="assets/images/perfiles/perfil1.png" class="foto__perfiles" alt="perfil1">
+                        </div>
+                        <div class="chat-soporte__contactos__perfiles-1__content ">
+                            <p class="chat-soporte__contact bold">Alam Brito Delgado</p>
+                            <p>Como estas?</p>
+                        </div>
+                    </li>
+                    <li class="chat-soporte__contactos__perfiles">
+                        <div class="chat-soporte__contactos__perfiles-1__img">
+                            <img src="assets/images/perfiles/perfil1.png" class="foto__perfiles" alt="perfil1">
+                        </div>
+                        <div class="chat-soporte__contactos__perfiles-1__content ">
+                            <p class="chat-soporte__contact bold">Alam Brito Delgado</p>
+                            <p>Como estas?</p>
+                        </div>
+                    </li>
+                    <li class="chat-soporte__contactos__perfiles">
+                        <div class="chat-soporte__contactos__perfiles-1__img">
+                            <img src="assets/images/perfiles/perfil1.png" class="foto__perfiles" alt="perfil1">
+                        </div>
+                        <div class="chat-soporte__contactos__perfiles-1__content ">
+                            <p class="chat-soporte__contact bold">Alam Brito Delgado</p>
+                            <p>Como estas?</p>
+                        </div>
+                    </li>
+                    <li class="chat-soporte__contactos__perfiles">
+                        <div class="chat-soporte__contactos__perfiles-1__img">
+                            <img src="assets/images/perfiles/perfil1.png" class="foto__perfiles" alt="perfil1">
+                        </div>
+                        <div class="chat-soporte__contactos__perfiles-1__content ">
+                            <p class="chat-soporte__contact bold">Alam Brito Delgado</p>
+                            <p>Como estas?</p>
+                        </div>
+                    </li>
+                    <li class="chat-soporte__contactos__perfiles">
+                        <div class="chat-soporte__contactos__perfiles-1__img">
+                            <img src="assets/images/perfiles/perfil1.png" class="foto__perfiles" alt="perfil1">
+                        </div>
+                        <div class="chat-soporte__contactos__perfiles-1__content ">
+                            <p class="chat-soporte__contact bold">Alam Brito Delgado</p>
+                            <p>Como estas?</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        
+        <!-- seccion conversacion -->
+        <section class="chat-soporte__conversacion"> 
+            <div class="chat-soporte__conversacion__header">
+                <img src="" alt="">
+                <p>Eren Jeager</p>
+                <p>En linea</p>
+            </div>
+            <div class="chat-soporte__conversacion__body">
+                <div class="chat-soporte__conversacion__body__talk">
+                    <div class="chat-soporte__conversacion__body__msj">
+                        <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
+                        <p id="chat1">Buenas Tardes, servicio al Cliente?</p>
+                    </div>
+                    <p id="date1">17:50 PM | 25 Ago</p>
+                </div>
+                <div class="chat-soporte__conversacion__body__talk">
+                    <div class="chat-soporte__conversacion__body__msj1">
+                        <p id="chat2">Buenas tardes, usted se ha contactado con soporte, en que lo puedo ayudar?</p>
+                        <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
+                    </div>
+                    <p id="date2">17:52 PM | 25 Ago</p>
+                </div>
+                <div class="chat-soporte__conversacion__body__talk">
+                    <div class="chat-soporte__conversacion__body__msj">
+                        <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
+                        <p id="chat1">Necesito hacer valer la garantia de un producto por fallo</p>
+                    </div>
+                    <p id="date1">17:54 PM | 25 Ago</p>
+                </div>
+                <div class="chat-soporte__conversacion__body__talk">
+                    <div class="chat-soporte__conversacion__body__msj1">
+                        <p id="chat2">OK, necesito sus datos y el nombre y boleta del producto...</p>
+                        <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
+                    </div>
+                    <p id="date2">17:58 PM | 25 Ago</p>
+                </div>
+                <div class="chat-soporte__conversacion__body__talk">
+                    <div class="chat-soporte__conversacion__body__msj">
+                        <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
+                        <p id="chat1">No hay problema, adjuntare lo solicitado de inmediato...</p>
+                    </div>
+                    <p id="date1">18:10 PM | 25 Ago</p>
+                </div>
+                
+            </div>
+            <div class="chat-soporte__conversacion__barra">
+                <select name="attach" id="attach" class="chat-soporte__conversacion__barra__select">
+                    
+                </select>
+                <input class="chat-soporte__conversacion__barra__label" type="text" placeholder="Escribe un mensaje...">
+                <button type="submit" class="chat-soporte__conversacion__barra__btn">Send</button>
+            </div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="assets/script/script.js"></script>
+</body>
+
+</html>
