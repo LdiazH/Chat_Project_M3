@@ -8,7 +8,6 @@ for (let i = 0; i < chat.length;i++){
     })
 }
 for (let i = 0; i < contactName.length; i++) {
-    // contactName[i].style.backgroundColor = "red";
     contactName[i]
   }
 
@@ -25,12 +24,19 @@ function hideShow(){
     }
 
 }
+//Prevent default btn send and btn buscar
+
+var form = document.getElementById("formChat");
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+});
+
+var buscar = document.getElementById("buscarChat");
+buscar.addEventListener("submit",function(event){
+    event.preventDefault();
+});
 
 
 
-
-// showHide.addEventListener('click',function(){
-//     chatSoporte.classList.remove('colapse');
-// })
 
 

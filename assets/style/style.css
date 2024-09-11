@@ -8,27 +8,72 @@ body{
     padding: 0;
 }
 
+p{
+    font-size: 0.5rem;
+}
+
+::placeholder {
+    color: #122716;
+    font-size: 0.75rem;
+  }
+
 
 nav{
-    background-color: #717a18;
+    background: rgb(18,39,22);
+    background: linear-gradient(90deg, rgba(18,39,22,1) 0%, rgba(130,167,47,1) 0%, rgba(113,122,24,1) 100%);
+    font-size: 0.625rem;
+    box-shadow: -1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(199, 237, 63);
+
 }
+
+.navbar-brand{
+    width: 20% !important;
+}
+
+.navbar__logo{
+    width: 100px;
+    height: 30%;
+    margin-right: 5px;
+    
+}
+
+
 
 .nav-item:hover{
     background-color: #e2e2a9;
     border-radius: 10px;
+    width: 30%;
+    height: 30%;
+
+}
+
+a{
+    font-size: 12px;
+}
+
+.nav-link{
+    font-size: 12px;
 }
 
 /* Boton colapsable   */
+
 .btn_colapsable{
     cursor: pointer;
+
 }
+
+/* Seccion Completa  */
+
 .chat-soporte{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e2e2a9
+    background: rgb(18,39,22);
+    background: linear-gradient(90deg, rgba(18,39,22,1) 0%, rgba(226,226,169,1) 0%, rgba(130,167,47,1) 100%);
 
 }
+
+/* botton contactos     */
 
 .hide__button{
     background-color: #122716;
@@ -37,23 +82,24 @@ nav{
     padding: 10px;
     border-radius: 15px;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
+
 .hide__button:hover{
     background-color: #82a72f;
 }
 
+/*  Contactos y mensajes      */
 
 .chat-soporte__contactos{
-    /* display: flex; */
-   
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     background-color: #82a72f ;
     height: 100vh;
     width: 50%;
     order: 1;
-    margin: 10px 15px 10px 15px;
+    margin: 10px 15px 25px 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 
@@ -61,9 +107,12 @@ nav{
 
 .colapse{
     display: none;
+
 }
 
 .chat-soporte__contact{
+    margin-bottom: 1px;
+    margin-top: 0.5rem;
    
 }
 
@@ -71,30 +120,36 @@ nav{
     font-weight: bold;
     background-color:#bcce16;
     border-radius: 5px;
+
 }
 
 .chat-soporte__contactos__input{
     border-radius: 15px;
     width: 60%;
+
 }
 
 .chat-soporte__contactos__btn{
     border-radius: 15px;
     width:25%;
+    background-color: #122716;
+    color: #e2e2a9;
+    font-size:auto;
+
 }
 
-/* .chat-soporte__contactos__menu{
-    display: flex;
-    flex-direction: column;
-} */
+
 .chat-soporte__contactos__menu{
     width: 100%;
+    height: 100vh;
 
 }
+
 .chat-soporte__contactos__perfil{
     height: 70vh;
     width: 90%;
 }
+
 .chat-soporte__contactos__perfiles{
     display: flex;
     align-items: center;
@@ -103,10 +158,17 @@ nav{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 90%;
-    height: 20%;
-    margin: 1rem 0.5rem 1rem 0.5rem ;
+    height: 30%;
+    margin: 1rem 0 1rem 0.5rem ;
+    overflow: scroll;
     
-    
+}
+
+.chat-soporte__contactos__perfiles::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+    display: none;  
+
 }
 
 .chat-soporte__contactos__perfiles-1__content{
@@ -116,24 +178,33 @@ nav{
     width: 60%;
     font-size: 2vh;
     
-
 } 
 
 
 .chat-soporte__contactos__perfiles:hover{
     background-color:#bcce16;
+    width: 100%;
+    height: 30%;
+
 }
 
 .foto__perfiles{
     border-radius: 50%;
-    width: 10vh;
-    height: 10vh;
+    width: 8vh;
+    height: 8vh;
     margin-left: 5px;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+
+}
+
+#chat-soporte__date{
+    font-size: 0.375rem;
+    margin-bottom: 3px;
+
 }
 
 
-
-
+/*    Seccion chat          */
 
 .chat-soporte__conversacion{
     order: 2;
@@ -141,30 +212,70 @@ nav{
     flex-direction: column;
     align-items:stretch;
     background-image: url(/assets/images/backgroundchat.png);
-    /* background-color: #82a72f; */
     height: 100vh;
-    margin: 10px 15px 10px 15px;
+    margin: 10px 15px 25px 15px;
     border-radius: 15px; 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     position: relative;
+
 }
 
+
+
 .chat-soporte__conversacion__header{
-    background-color: #122716;
+    background: rgb(18,39,22);
+    background: linear-gradient(90deg, rgba(18,39,22,1) 0%, rgba(18,39,22,1) 0%, rgba(113,122,24,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: aliceblue;
     width: 100%;
     height: 15vh;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 
 }
+
+.chat-soporte__conversacion__header__img{
+    border-radius: 50%;
+    border: solid #717a18;
+    height: 80%;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+
+}
+
 .chat-soporte__conversacion__body{
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
+    overflow: scroll;
     
 }
+
+.chat-soporte__conversacion__body::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+    display: none;  
+
+}
+
+/*  Icono conectado/desconectado         */
+
+#conectado{
+    background-color: rgb(18, 251, 30);
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+
+}
+
+#desconectado{
+    background-color: rgb(255, 3, 3);
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+
+}
+
 .chat-soporte__conversacion__body__talk{
     
 }
@@ -172,7 +283,9 @@ nav{
 .chat-soporte__conversacion__body__msj{
     display: flex;
     order: 1;
+
 }
+
 .chat-soporte__conversacion__body__msj1{
     display: flex;
     justify-content: flex-end;
@@ -184,6 +297,7 @@ nav{
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
+
 }
 
 #chat1{
@@ -194,6 +308,7 @@ nav{
     padding:1rem;
     margin-bottom: 0px;
     border-radius: 0 15px 15px 15px;
+
 }
 
 #chat2{
@@ -211,11 +326,14 @@ nav{
     margin-left: 2.5rem;
 
 }
+
 #date2{
     float: right;
     margin-right: 2.5rem;
     
 }
+
+/* barra mensajes                   */
 
 .chat-soporte__conversacion__barra{
     background-color: #e2e2a9;
@@ -227,61 +345,148 @@ nav{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 
 }
-.chat-soporte__conversacion__barra__select{
-    border-radius: 5px 0 0 5px;
-    height: 29.2px;
+
+.chat-soporte__icono{
+    width: 24px;
+    height: 24px;
+
+}
+
+.dropdownMenu__ul{
+    background: rgb(18,39,22) !important;
+    background: linear-gradient(90deg, rgba(18,39,22,1) 0%, rgba(130,167,47,1) 0%, rgba(113,122,24,1) 100%) !important;
+
+}
+
+.dropdown-menu__li:hover{
+    background-color: #bcce16;
+
 }
 
 .chat-soporte__conversacion__barra__label{
     width: 85%;
+
 }
 
 .chat-soporte__conversacion__barra__btn{
     height: 29.2px;
     border-radius: 0 5px 5px 0;
+    background-color: #717a18;
+    color: aliceblue;
 
 }
 
 
 /*medias queries*/
 @media (min-width:576px){
-    
+    p{
+        font-size: 0.7rem;
+    }
+
+    #chat-soporte__date{
+        font-size: 0.450rem;
+        margin-bottom: 3px;
+    }
+
+
+    .chat-soporte__contactos{
+        height: 150vh;
+    }
+
+    .chat-soporte__conversacion{
+        height: 125vh;
+    }
+
 
 
 }
 
 @media (min-width:768px){
+
+    nav{
+        font-size: 0.8rem;
+
+    }
     
     
 }
 
 @media (min-width:992px){
+
+    nav{
+        font-size: 1rem;
+
+    }
+    
+    .chat-soporte__contactos__btn{
+        font-size: 14px;
+    }
+
+    .chat-soporte__contactos__perfiles{
+        height:18vh;
+
+    }
+
     .chat-soporte{
         display: flex;
         flex-direction: row;
     }
 
-    /* .colapse{
-        display: flex;
-    } */
-
     .hide__button{
         align-self: flex-start;
+
     }
     
     .chat-soporte__contactos{
         order: 1;
         width: 30%;
         display: flex;
+        height: 130vh;
+
     }
 
     .chat-soporte__conversacion{
         order: 2;
-        /* flex-grow: 4; */
         width: 65%;
+        height: 130vh;
+
+    }
+
+}
+
+@media (min-width:1200px){
+
+    .chat-soporte__contactos{
+        height: 115vh;
+    }
+
+    .chat-soporte__conversacion{
+        height: 115vh;
+    }
+
+
+}
+
+@media (min-width:1400px){
+
+    p{
+        font-size: 1rem;
+    }
+
+    #chat-soporte__date{
+        font-size: 0.600rem;
+        margin-bottom: 3px;
+    }
+
+    .chat-soporte__contactos{
+        height: 120vh;
+    }
+
+    .chat-soporte__conversacion{
+        height: 120vh;
     }
 
 }
