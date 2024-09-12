@@ -31,13 +31,16 @@ nav{
 }
 
 .navbar__logo{
-    width: 100px;
+    width: 70px;
     height: 30%;
     margin-right: 5px;
-    
+    border-radius: 50%;
+    box-shadow: -1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(199, 237, 63);    
 }
 
-
+.nav-item{
+    font-weight: bolder;
+}
 
 .nav-item:hover{
     background-color: #e2e2a9;
@@ -90,19 +93,24 @@ a{
     background-color: #82a72f;
 }
 
+#contactosTitle{
+    color: #e2e2a9;
+}
+
+
+
 /*  Contactos y mensajes      */
 
 .chat-soporte__contactos{
     flex-direction: column;
     align-items: center;
-    background-color: #82a72f ;
     height: 100vh;
     width: 50%;
     order: 1;
-    margin: 10px 15px 25px 15px;
-    border-radius: 10px;
+    margin: 10px 0px 25px 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
-
+    background: rgb(18,39,22);
+    background: linear-gradient(90deg, rgba(18,39,22,1) 0%, rgba(125,135,30,1) 0%, rgba(18,39,22,1) 100%);
 }
 
 .colapse{
@@ -113,6 +121,7 @@ a{
 .chat-soporte__contact{
     margin-bottom: 1px;
     margin-top: 0.5rem;
+    width: fit-content;
    
 }
 
@@ -213,8 +222,7 @@ a{
     align-items:stretch;
     background-image: url(/assets/images/backgroundchat.png);
     height: 100vh;
-    margin: 10px 15px 25px 15px;
-    border-radius: 15px; 
+    margin: 10px 15px 25px 0px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     position: relative;
 
@@ -231,7 +239,6 @@ a{
     color: aliceblue;
     width: 100%;
     height: 15vh;
-    border-radius: 15px 15px 0 0;
 
 }
 
@@ -345,7 +352,7 @@ a{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    border-radius: 0 0 10px 10px;
+
 
 }
 
@@ -445,6 +452,8 @@ a{
         width: 30%;
         display: flex;
         height: 130vh;
+        
+        
 
     }
 
@@ -452,9 +461,11 @@ a{
         order: 2;
         width: 65%;
         height: 130vh;
+        
 
     }
 
+    
 }
 
 @media (min-width:1200px){

@@ -1,3 +1,6 @@
+//mensajes leidos
+
+
 const contactName = document.getElementsByClassName("chat-soporte__contact");
 
 const chat = document.getElementsByClassName("chat-soporte__contactos__perfiles");
@@ -10,6 +13,8 @@ for (let i = 0; i < chat.length;i++){
 for (let i = 0; i < contactName.length; i++) {
     contactName[i]
   }
+
+  //boton ocultar / desplegar mensaje
 
 var bloqueMensajes = document.getElementById("mensajes");
 var display = 0;

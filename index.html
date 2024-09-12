@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Comunicación y Soporte</title>
     <link rel="stylesheet" href="assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,7 +12,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="navbar__logo" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="navbar__logo" alt="logo" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,10 +51,10 @@
         <!-- seccion buscador mas perfiles -->
         <button type="button" id="btn__hide " onclick="hideShow()" class="hide__button">Ver / Ocultar Contactos</button>
         <section class="chat-soporte__contactos colapse" id="mensajes">
-            <h3>Contactos</h3>
-            <form class="chat-soporte__contactos__buscador container text-center" id="buscarChat">
+            <h3 id="contactosTitle">Contactos</h3>
+            <form class="chat-soporte__contactos__buscador container text-center" id="buscarChat" >
                 <input type="text" class="chat-soporte__contactos__input" placeholder=" Buscar conversación..."><button type="submit"
-                    class="chat-soporte__contactos__btn">Buscar</button>
+                    class="chat-soporte__contactos__btn" id="btnBuscar">Buscar</button>
             </form>
             <section class="chat-soporte__contactos__menu">
                 <ul class="chat-soporte__contactos__perfil">
@@ -78,7 +77,7 @@
                             <p class="chat-soporte__contact bold">Oscar Martinez <img
                                     src="assets/images/iconos/circle (1).svg" alt="conectado" id="desconectado"></p>
                             <p id="chat-soporte__date">Última vez 08:50 PM | 24 Ago</p>
-                            <p>Buenas tardes, alguien en linea?</p>
+                            <p>Buenas tardes, alguien en linea? Quisiera que alguien me contacte urgente.</p>
                         </div>
                     </li>
                     <li class="chat-soporte__contactos__perfiles">
@@ -89,7 +88,7 @@
                             <p class="chat-soporte__contact bold">Michael Scott <img
                                     src="assets/images/iconos/circle (1).svg" alt="conectado" id="conectado"></p>
                             <p id="chat-soporte__date">Última vez 11:50 PM | 22 Ago</p>
-                            <p>Como estas?</p>
+                            <p>Como estas? Necesito ayuda urgente con un producto, aun tiene garantía.</p>
                         </div>
                     </li>
                     <li class="chat-soporte__contactos__perfiles">
@@ -100,7 +99,7 @@
                             <p class="chat-soporte__contact bold">Pam Beesly <img
                                     src="assets/images/iconos/circle (1).svg" alt="conectado" id="desconectado"> </p>
                             <p id="chat-soporte__date">Última vez 18:50 PM | 20 Ago</p>
-                            <p>Muchas gracias por todo, hasta luego.</p>
+                            <p>Ahora si funciono el equipo.Muchas gracias por todo, hasta luego.</p>
                         </div>
                     </li>
                     <li class="chat-soporte__contactos__perfiles">
@@ -111,7 +110,7 @@
                             <p class="chat-soporte__contact bold">Dwight Schrute <img
                                     src="assets/images/iconos/circle (1).svg" alt="conectado" id="desconectado"></p>
                             <p id="chat-soporte__date">Última vez 14:50 PM | 20 Ago</p>
-                            <p>10/10 gracias por el servicio.</p>
+                            <p>10/10 gracias por el servicio. Estamos en contacto, saludos.</p>
                         </div>
                     </li>
                 </ul>
@@ -129,7 +128,7 @@
                 <div class="chat-soporte__conversacion__body__talk">
                     <div class="chat-soporte__conversacion__body__msj">
                         <img src="assets/images/perfiles/jim halpert.png" id="foto1" alt="">
-                        <p id="chat1">Buenas Tardes, servicio al Cliente?</p>
+                        <p id="chat1">Buenas Tardes, servicio al Cliente? Habla con Jim, en que puedo ayudarle?</p>
                     </div>
                     <p id="date1">17:50 PM | 25 Ago</p>
                 </div>
@@ -149,7 +148,7 @@
                 </div>
                 <div class="chat-soporte__conversacion__body__talk">
                     <div class="chat-soporte__conversacion__body__msj1">
-                        <p id="chat2">OK, necesito sus datos y el nombre y boleta del producto...</p>
+                        <p id="chat2">OK, necesito sus datos personales; el nombre, rut y boleta del producto o los productos..</p>
                         <img src="assets/images/perfiles/perfil2.png" id="foto1" alt="">
                     </div>
                     <p id="date2">17:58 PM | 25 Ago</p>
@@ -187,5 +186,4 @@
         crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
 </body>
-
 </html>
