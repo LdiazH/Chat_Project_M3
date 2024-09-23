@@ -29,6 +29,7 @@ function hideShow(){
     }
 
 }
+
 //Prevent default btn send and btn buscar
 
 var form = document.getElementById("formChat");
